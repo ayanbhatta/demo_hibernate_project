@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-mapping>
+	<class name="demo_hibernate_project.Employee" table="Emp">
+		<id name="id" column="empId">
+			<generator class="identity" />
+		</id>
+		<property name="name" column="empName" />
+		<property name="salary" column="empSalary" />
+	</class>
+</hibernate-mapping>
