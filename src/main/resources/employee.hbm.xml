@@ -3,7 +3,8 @@
 <hibernate-mapping>
 	<class name="demo_hibernate_project.Employee" table="Emp">
 		<id name="id" column="empId">
-			<generator class="identity" />
+			
+			<generator class="assigned" />
 		</id>
 		<property name="name" column="empName" />
 		<property name="salary" column="empSalary" />
